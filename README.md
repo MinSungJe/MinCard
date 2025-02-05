@@ -7,7 +7,7 @@
 - ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
   ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
   ![Storybook](https://img.shields.io/badge/-Storybook-FF4785?style=for-the-badge&logo=storybook&logoColor=white)
-  ![Vitest](https://img.shields.io/badge/-Vitest-252529?style=for-the-badge&logo=vitest&logoColor=FCC72B)
+  <!-- ![Vitest](https://img.shields.io/badge/-Vitest-252529?style=for-the-badge&logo=vitest&logoColor=FCC72B) -->
 
 ### 세부 내용
 
@@ -28,7 +28,7 @@
 
 ### MSW 라이브러리 활용
 
-- 카드 속 데이터를 **Vitest**로 구현한 Mocking API로 전달받고 이를 표시
+- 카드 속 데이터를 **MSW**로 구현한 Mocking API로 전달받고 이를 표시
 
 ## 🔍 살펴 보기
 
