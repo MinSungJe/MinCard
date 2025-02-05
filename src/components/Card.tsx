@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import CardImage from '../assets/images/card/Magician.jpg';
 
 const CardContainer = styled.div`
   position: relative;
@@ -37,15 +36,15 @@ const CardContent = styled.div`
   width: 250px;
   height: 420px;
   background-size: cover;
-  background-image: url(${CardImage});
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 `;
 
 interface CardProps {
+  src: string
   rarity: string
 }
 
-const Card = ({rarity}: CardProps) => {
+const Card = ({src, rarity}: CardProps) => {
   const [cardStyle, setCardStyle] = useState({});
   const [lightOverlayStyle, setLightOverlayStyle] = useState({});
   const [rareOverlayStyle, setRareOverlayStyle] = useState({});
@@ -93,7 +92,7 @@ const Card = ({rarity}: CardProps) => {
     <CardContainer style={cardStyle} onMouseMove={handleMouseMove} onMouseOut={handleMouseOut}>
       {rarity === 'rare' ? <CardRareOverlay style={rareOverlayStyle} /> : null}
       <CardLightOverlay style={lightOverlayStyle} />
-      <CardContent />
+      <CardContent style={{backgroundImage: `url(${src})`}}/>
     </CardContainer>
   );
 };
