@@ -12,13 +12,25 @@ const CardContainer = styled.div`
   overflow: hidden;
 `;
 
-const CardOverlay = styled.div`
+const CardLightOverlay = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
   background-image: radial-gradient(circle, rgba(255, 255, 255, 0.4) 10%, transparent 50%);
   pointer-events: none; /* 마우스 이벤트 차단 */
   transition: all 0.1s;
+`;
+
+const CardRareOverlay = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(105deg, transparent 40%, rgba(225, 219, 112, 0.8) 45%, rgba(132, 50, 255, 0.6) 50%, transparent 54%);
+  background-size: 150% 150%;
+  background-position: 100%;
+  filter: brightness(1.5) opacity(0.7);
+  mix-blend-mode: color-dodge;
+  pointer-events: none; /* 마우스 이벤트 차단 */
 `;
 
 const CardContent = styled.div`
@@ -31,7 +43,8 @@ const CardContent = styled.div`
 
 const Card = () => {
   const [cardStyle, setCardStyle] = useState({});
-  const [overlayStyle, setOverlayStyle] = useState({});
+  const [lightOverlayStyle, setLightOverlayStyle] = useState({});
+  const [rareOverlayStyle, setRareOverlayStyle] = useState({});
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const x = e.nativeEvent.offsetX;
@@ -40,14 +53,20 @@ const Card = () => {
     const rotateY = (1 / 25) * x - 5;
     const posX = x - 125
     const posY = y - 210
+    const rarePos = 100 - (x/3 + -y/5)
 
     setCardStyle({
       transform: `perspective(300px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
     });
 
-    setOverlayStyle({
+    setLightOverlayStyle({
       display: 'block',
       transform: `translateX(${posX}px) translateY(${posY}px)`,
+    })
+
+    setRareOverlayStyle({
+      filter: 'opacity(0.7)',
+      backgroundPosition: `${rarePos}%`,
     })
   };
 
@@ -56,14 +75,20 @@ const Card = () => {
       transform: 'rotateX(0deg) rotateY(0deg)',
     });
 
-    setOverlayStyle({
+    setLightOverlayStyle({
       transform: `translateX(0px) translateY(0px)`,
+    })
+
+    setRareOverlayStyle({
+      filter: 'opacity(0.2)',
+      backgroundPosition: `100%`,
     })
   };
 
   return (
     <CardContainer style={cardStyle} onMouseMove={handleMouseMove} onMouseOut={handleMouseOut}>
-      <CardOverlay style={overlayStyle} />
+      <CardRareOverlay style={rareOverlayStyle} />
+      <CardLightOverlay style={lightOverlayStyle} />
       <CardContent />
     </CardContainer>
   );
