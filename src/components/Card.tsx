@@ -28,7 +28,7 @@ const CardRareOverlay = styled.div`
   background-image: linear-gradient(105deg, transparent 40%, rgba(225, 219, 112, 0.8) 45%, rgba(132, 50, 255, 0.6) 50%, transparent 54%);
   background-size: 150% 150%;
   background-position: 100%;
-  filter: brightness(1.5) opacity(0.7);
+  filter: brightness(1.5) opacity(0.5);
   mix-blend-mode: color-dodge;
   pointer-events: none; /* 마우스 이벤트 차단 */
 `;
@@ -41,7 +41,11 @@ const CardContent = styled.div`
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 `;
 
-const Card = () => {
+interface CardProps {
+  rarity: string
+}
+
+const Card = ({rarity}: CardProps) => {
   const [cardStyle, setCardStyle] = useState({});
   const [lightOverlayStyle, setLightOverlayStyle] = useState({});
   const [rareOverlayStyle, setRareOverlayStyle] = useState({});
@@ -80,14 +84,14 @@ const Card = () => {
     })
 
     setRareOverlayStyle({
-      filter: 'opacity(0.2)',
+      filter: 'opacity(0.5)',
       backgroundPosition: `100%`,
     })
   };
 
   return (
     <CardContainer style={cardStyle} onMouseMove={handleMouseMove} onMouseOut={handleMouseOut}>
-      <CardRareOverlay style={rareOverlayStyle} />
+      {rarity === 'rare' ? <CardRareOverlay style={rareOverlayStyle} /> : null}
       <CardLightOverlay style={lightOverlayStyle} />
       <CardContent />
     </CardContainer>
