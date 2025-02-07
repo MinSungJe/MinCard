@@ -1,0 +1,22 @@
+[
+  {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Swords10.jpg",
+    "rarity": "normal"
+  },
+  {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Pents02.jpg",
+    "rarity": "normal"
+  },
+  {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/d/de/RWS_Tarot_01_Magician.jpg",
+    "rarity": "rare"
+  },
+  {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/d/d2/RWS_Tarot_03_Empress.jpg",
+    "rarity": "rare"
+  },
+  {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Wands04.jpg",
+    "rarity": "normal"
+  }
+]
