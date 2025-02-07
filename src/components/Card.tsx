@@ -24,7 +24,13 @@ const CardRareOverlay = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(105deg, transparent 40%, rgba(225, 219, 112, 0.8) 45%, rgba(132, 50, 255, 0.6) 50%, transparent 54%);
+  background-image: linear-gradient(
+    105deg,
+    transparent 40%,
+    rgba(225, 219, 112, 0.8) 45%,
+    rgba(132, 50, 255, 0.6) 50%,
+    transparent 54%
+  );
   background-size: 150% 150%;
   background-position: 100%;
   filter: brightness(1.5) opacity(0.5);
@@ -40,11 +46,11 @@ const CardContent = styled.div`
 `;
 
 interface CardProps {
-  src: string
-  rarity: string
+  src: string;
+  rarity: string;
 }
 
-const Card = ({src, rarity}: CardProps) => {
+const Card = ({ src, rarity }: CardProps) => {
   const [cardStyle, setCardStyle] = useState({});
   const [lightOverlayStyle, setLightOverlayStyle] = useState({});
   const [rareOverlayStyle, setRareOverlayStyle] = useState({});
@@ -54,9 +60,9 @@ const Card = ({src, rarity}: CardProps) => {
     const y = e.nativeEvent.offsetY;
     const rotateX = (-1 / 42) * y + 5;
     const rotateY = (1 / 25) * x - 5;
-    const posX = x - 125
-    const posY = y - 210
-    const rarePos = 100 - (x/3 + -y/5)
+    const posX = x - 125;
+    const posY = y - 210;
+    const rarePos = 100 - (x / 3 + -y / 5);
 
     setCardStyle({
       transform: `perspective(300px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
@@ -65,12 +71,12 @@ const Card = ({src, rarity}: CardProps) => {
     setLightOverlayStyle({
       display: 'block',
       transform: `translateX(${posX}px) translateY(${posY}px)`,
-    })
+    });
 
     setRareOverlayStyle({
       filter: 'opacity(0.7)',
       backgroundPosition: `${rarePos}%`,
-    })
+    });
   };
 
   const handleMouseOut = () => {
@@ -80,19 +86,19 @@ const Card = ({src, rarity}: CardProps) => {
 
     setLightOverlayStyle({
       transform: `translateX(0px) translateY(0px)`,
-    })
+    });
 
     setRareOverlayStyle({
       filter: 'opacity(0.5)',
       backgroundPosition: `100%`,
-    })
+    });
   };
 
   return (
     <CardContainer style={cardStyle} onMouseMove={handleMouseMove} onMouseOut={handleMouseOut}>
       {rarity === 'rare' ? <CardRareOverlay style={rareOverlayStyle} /> : null}
       <CardLightOverlay style={lightOverlayStyle} />
-      <CardContent style={{backgroundImage: `url(${src})`}}/>
+      <CardContent style={{ backgroundImage: `url(${src})` }} />
     </CardContainer>
   );
 };
