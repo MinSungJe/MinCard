@@ -10,7 +10,7 @@ describe('useCards', () => {
       const { result } = renderHook(() => useCards());
 
       await waitFor(() => {
-        expect(result.current.products).toHaveLength(5);
+        expect(result.current.cards).toHaveLength(78);
       });
     });
 
@@ -31,7 +31,7 @@ describe('useCards', () => {
       const { result } = renderHook(() => useCards());
 
       await waitFor(() => {
-        expect(result.current.products).toEqual([]);
+        expect(result.current.cards).toEqual([]);
         expect(result.current.loading).toBe(false);
         expect(result.current.error).toBeTruthy();
       });

@@ -2,18 +2,20 @@ import { useState, useEffect } from 'react';
 import { CARDS_ENDPOINT } from '../api/endpoints';
 
 interface Card {
-  src: string;
+  id: number;
+  name: string;
+  imageURL: string;
   rarity: string;
 }
 
 interface UseCardsResult {
-  products: Card[];
+  cards: Card[];
   loading: boolean;
   error: unknown;
 }
 
 export default function useCards(): UseCardsResult {
-  const [products, setProducts] = useState<Card[]>([]);
+  const [cards, setCards] = useState<Card[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<unknown>(null);
 
@@ -22,9 +24,9 @@ export default function useCards(): UseCardsResult {
       try {
         const response = await fetch(CARDS_ENDPOINT);
         const data = await response.json();
-        setProducts(data);
+        setCards(data);
       } catch (error) {
-        setError(error)
+        setError(error);
       } finally {
         setLoading(false);
       }
@@ -33,5 +35,5 @@ export default function useCards(): UseCardsResult {
     fetchProducts();
   }, []);
 
-  return { products, loading, error };
+  return { cards, loading, error };
 }
