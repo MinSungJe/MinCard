@@ -134,337 +134,337 @@
   {
     "id": 23,
     "name": "Ace of Wands",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/1/11.jpg",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/1/11/Wands01.jpg",
     "rarity": "normal"
   },
   {
     "id": 24,
-    "name": "2 of Wands",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d.jpg",
+    "name": "Two of Wands",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Wands02.jpg",
     "rarity": "normal"
   },
   {
     "id": 25,
-    "name": "3 of Wands",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d.jpg",
+    "name": "Three of Wands",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Wands03.jpg",
     "rarity": "normal"
   },
   {
     "id": 26,
-    "name": "4 of Wands",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d.jpg",
+    "name": "Four of Wands",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Wands04.jpg",
     "rarity": "normal"
   },
   {
     "id": 27,
-    "name": "5 of Wands",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d.jpg",
+    "name": "Five of Wands",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Wands05.jpg",
     "rarity": "normal"
   },
   {
     "id": 28,
-    "name": "6 of Wands",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d.jpg",
+    "name": "Six of Wands",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Wands06.jpg",
     "rarity": "normal"
   },
   {
     "id": 29,
-    "name": "7 of Wands",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d.jpg",
+    "name": "Seven of Wands",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Wands07.jpg",
     "rarity": "normal"
   },
   {
     "id": 30,
-    "name": "8 of Wands",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d.jpg",
+    "name": "Eight of Wands",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Wands08.jpg",
     "rarity": "normal"
   },
   {
     "id": 31,
-    "name": "9 of Wands",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d.jpg",
+    "name": "Nine of Wands",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Tarot_Nine_of_Wands.jpg",
     "rarity": "normal"
   },
   {
     "id": 32,
-    "name": "10 of Wands",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/0/0b.jpg",
+    "name": "Ten of Wands",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Wands10.jpg",
     "rarity": "normal"
   },
   {
     "id": 33,
     "name": "Page of Wands",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/6/6a.jpg",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Wands11.jpg",
     "rarity": "normal"
   },
   {
     "id": 34,
     "name": "Knight of Wands",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/1/16.jpg",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/1/16/Wands12.jpg",
     "rarity": "normal"
   },
   {
     "id": 35,
     "name": "Queen of Wands",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/0/0d.jpg",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Wands13.jpg",
     "rarity": "normal"
   },
   {
     "id": 36,
     "name": "King of Wands",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/c/ce.jpg",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Wands14.jpg",
     "rarity": "normal"
   },
   {
     "id": 37,
     "name": "Ace of Cups",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/1/11.jpg",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/3/36/Cups01.jpg",
     "rarity": "normal"
   },
   {
     "id": 38,
-    "name": "2 of Cups",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d.jpg",
+    "name": "Two of Cups",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Cups02.jpg",
     "rarity": "normal"
   },
   {
     "id": 39,
-    "name": "3 of Cups",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d.jpg",
+    "name": "Three of Cups",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Cups03.jpg",
     "rarity": "normal"
   },
   {
     "id": 40,
-    "name": "4 of Cups",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d.jpg",
+    "name": "Four of Cups",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/3/35/Cups04.jpg",
     "rarity": "normal"
   },
   {
     "id": 41,
-    "name": "5 of Cups",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d.jpg",
+    "name": "Five of Cups",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Cups05.jpg",
     "rarity": "normal"
   },
   {
     "id": 42,
-    "name": "6 of Cups",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d.jpg",
+    "name": "Six of Cups",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/1/17/Cups06.jpg",
     "rarity": "normal"
   },
   {
     "id": 43,
-    "name": "7 of Cups",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d.jpg",
+    "name": "Seven of Cups",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Cups07.jpg",
     "rarity": "normal"
   },
   {
     "id": 44,
-    "name": "8 of Cups",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d.jpg",
+    "name": "Eight of Cups",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/6/60/Cups08.jpg",
     "rarity": "normal"
   },
   {
     "id": 45,
-    "name": "9 of Cups",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d.jpg",
+    "name": "Nine of Cups",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/2/24/Cups09.jpg",
     "rarity": "normal"
   },
   {
     "id": 46,
-    "name": "10 of Cups",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/0/0b.jpg",
+    "name": "Ten of Cups",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/8/84/Cups10.jpg",
     "rarity": "normal"
   },
   {
     "id": 47,
     "name": "Page of Cups",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/6/6a.jpg",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Cups11.jpg",
     "rarity": "normal"
   },
   {
     "id": 48,
     "name": "Knight of Cups",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/1/16.jpg",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Cups12.jpg",
     "rarity": "normal"
   },
   {
     "id": 49,
     "name": "Queen of Cups",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/0/0d.jpg",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/6/62/Cups13.jpg",
     "rarity": "normal"
   },
   {
     "id": 50,
     "name": "King of Cups",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/c/ce.jpg",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/0/04/Cups14.jpg",
     "rarity": "normal"
   },
   {
     "id": 51,
     "name": "Ace of Swords",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/1/11.jpg",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Swords01.jpg",
     "rarity": "normal"
   },
   {
     "id": 52,
-    "name": "2 of Swords",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d.jpg",
+    "name": "Two of Swords",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Swords02.jpg",
     "rarity": "normal"
   },
   {
     "id": 53,
-    "name": "3 of Swords",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d.jpg",
+    "name": "Three of Swords",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/0/02/Swords03.jpg",
     "rarity": "normal"
   },
   {
     "id": 54,
-    "name": "4 of Swords",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d.jpg",
+    "name": "Four of Swords",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Swords04.jpg",
     "rarity": "normal"
   },
   {
     "id": 55,
-    "name": "5 of Swords",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d.jpg",
+    "name": "Five of Swords",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/2/23/Swords05.jpg",
     "rarity": "normal"
   },
   {
     "id": 56,
-    "name": "6 of Swords",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d.jpg",
+    "name": "Six of Swords",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/2/29/Swords06.jpg",
     "rarity": "normal"
   },
   {
     "id": 57,
-    "name": "7 of Swords",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d.jpg",
+    "name": "Seven of Swords",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/3/34/Swords07.jpg",
     "rarity": "normal"
   },
   {
     "id": 58,
-    "name": "8 of Swords",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d.jpg",
+    "name": "Eight of Swords",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Swords08.jpg",
     "rarity": "normal"
   },
   {
     "id": 59,
-    "name": "9 of Swords",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d.jpg",
+    "name": "Nine of Swords",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Swords09.jpg",
     "rarity": "normal"
   },
   {
     "id": 60,
-    "name": "10 of Swords",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/0/0b.jpg",
+    "name": "Ten of Swords",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Swords10.jpg",
     "rarity": "normal"
   },
   {
     "id": 61,
     "name": "Page of Swords",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/6/6a.jpg",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Swords11.jpg",
     "rarity": "normal"
   },
   {
     "id": 62,
     "name": "Knight of Swords",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/1/16.jpg",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Swords12.jpg`",
     "rarity": "normal"
   },
   {
     "id": 63,
     "name": "Queen of Swords",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/0/0d.jpg",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Swords13.jpg",
     "rarity": "normal"
   },
   {
     "id": 64,
     "name": "King of Swords",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/c/ce.jpg",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/3/33/Swords14.jpg",
     "rarity": "normal"
   },
   {
     "id": 65,
     "name": "Ace of Pentacles",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/1/11.jpg",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Pents01.jpg",
     "rarity": "normal"
   },
   {
     "id": 66,
-    "name": "2 of Pentacles",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d.jpg",
+    "name": "Two of Pentacles",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Pents02.jpg",
     "rarity": "normal"
   },
   {
     "id": 67,
-    "name": "3 of Pentacles",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d.jpg",
+    "name": "Three of Pentacles",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/4/42/Pents03.jpg",
     "rarity": "normal"
   },
   {
     "id": 68,
-    "name": "4 of Pentacles",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d.jpg",
+    "name": "Four of Pentacles",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/3/35/Pents04.jpg",
     "rarity": "normal"
   },
   {
     "id": 69,
-    "name": "5 of Pentacles",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d.jpg",
+    "name": "Five of Pentacles",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/96/Pents05.jpg",
     "rarity": "normal"
   },
   {
     "id": 70,
-    "name": "6 of Pentacles",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d.jpg",
+    "name": "Six of Pentacles",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Pents06.jpg",
     "rarity": "normal"
   },
   {
     "id": 71,
-    "name": "7 of Pentacles",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d.jpg",
+    "name": "Seven of Pentacles",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Pents07.jpg",
     "rarity": "normal"
   },
   {
     "id": 72,
-    "name": "8 of Pentacles",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d.jpg",
+    "name": "Eight of Pentacles",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/4/49/Pents08.jpg",
     "rarity": "normal"
   },
   {
     "id": 73,
-    "name": "9 of Pentacles",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9d.jpg",
+    "name": "Nine of Pentacles",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Pents09.jpg",
     "rarity": "normal"
   },
   {
     "id": 74,
-    "name": "10 of Pentacles",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/0/0b.jpg",
+    "name": "Ten of Pentacles",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/4/42/Pents10.jpg",
     "rarity": "normal"
   },
   {
     "id": 75,
     "name": "Page of Pentacles",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/6/6a.jpg",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Pents11.jpg",
     "rarity": "normal"
   },
   {
     "id": 76,
     "name": "Knight of Pentacles",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/1/16.jpg",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Pents12.jpg",
     "rarity": "normal"
   },
   {
     "id": 77,
     "name": "Queen of Pentacles",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/0/0d.jpg",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/8/88/Pents13.jpg",
     "rarity": "normal"
   },
   {
     "id": 78,
     "name": "King of Pentacles",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/c/ce.jpg",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Pents14.jpg",
     "rarity": "normal"
   }
 ]

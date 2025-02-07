@@ -1,13 +1,6 @@
 import { useState, useEffect } from 'react';
 import { CARDS_ENDPOINT } from '../api/endpoints';
 
-interface Card {
-  id: number;
-  name: string;
-  imageURL: string;
-  rarity: string;
-}
-
 interface UseCardsResult {
   cards: Card[];
   loading: boolean;
