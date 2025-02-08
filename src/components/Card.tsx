@@ -25,15 +25,22 @@ const CardRareOverlay = styled.div`
   width: 100%;
   height: 100%;
   background-image: linear-gradient(
-    105deg,
-    transparent 40%,
-    rgba(225, 219, 112, 0.8) 45%,
-    rgba(132, 50, 255, 0.6) 50%,
-    transparent 54%
-  );
-  background-size: 150% 150%;
+      105deg,
+      transparent 25%,
+      rgba(225, 219, 112, 0.8) 30%,
+      rgba(132, 50, 255, 0.6) 35%,
+      transparent 40%
+    ),
+    linear-gradient(
+      105deg,
+      transparent 60%,
+      rgba(225, 219, 112, 0.8) 65%,
+      rgba(132, 50, 255, 0.6) 70%,
+      transparent 75%
+    );
+  background-size: 200% 150%;
   background-position: 100%;
-  filter: brightness(1.5) opacity(0.5);
+  filter: brightness(1.5) opacity(0);
   mix-blend-mode: color-dodge;
   pointer-events: none; /* 마우스 이벤트 차단 */
 `;
@@ -89,7 +96,7 @@ const Card = ({ src, rarity }: CardProps) => {
     });
 
     setRareOverlayStyle({
-      filter: 'opacity(0.5)',
+      filter: 'opacity(0)',
       backgroundPosition: `100%`,
     });
   };
