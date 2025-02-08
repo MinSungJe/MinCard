@@ -12,12 +12,13 @@ const CardContainer = styled.div`
 `;
 
 const CardLightOverlay = styled.div`
+  filter: opacity(0);
   position: absolute;
   width: 100%;
   height: 100%;
   background-image: radial-gradient(circle, rgba(255, 255, 255, 0.4) 10%, transparent 50%);
   pointer-events: none; /* 마우스 이벤트 차단 */
-  transition: all 0.1s;
+  transition: all 0.05s;
 `;
 
 const CardRareOverlay = styled.div`
@@ -27,8 +28,8 @@ const CardRareOverlay = styled.div`
   background-image: linear-gradient(
       105deg,
       transparent 25%,
-      rgba(225, 219, 112, 0.8) 30%,
-      rgba(132, 50, 255, 0.6) 35%,
+      rgba(255, 248, 113, 0.8) 30%,
+      rgba(166, 106, 255, 0.6) 35%,
       transparent 40%
     ),
     linear-gradient(
@@ -76,7 +77,7 @@ const Card = ({ src, rarity }: CardProps) => {
     });
 
     setLightOverlayStyle({
-      display: 'block',
+      filter: 'opacity(1)',
       transform: `translateX(${posX}px) translateY(${posY}px)`,
     });
 
@@ -92,7 +93,7 @@ const Card = ({ src, rarity }: CardProps) => {
     });
 
     setLightOverlayStyle({
-      transform: `translateX(0px) translateY(0px)`,
+      filter: 'opacity(0)',
     });
 
     setRareOverlayStyle({
