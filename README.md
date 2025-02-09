@@ -31,6 +31,11 @@
 - 카드 속 데이터를 **MSW**로 구현한 Mocking API로 전달
 - **MSW**가 제대로 값을 mocking하고 있는 지 vitest로 점검
 - 전달받은 데이터를 표시
+  `
+
+## 👉 결과
+
+<img src="./output/epic_output.gif" width=250px>
 
 ## 🔍 살펴 보기
 
