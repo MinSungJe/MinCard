@@ -35,7 +35,11 @@
 
 ## 👉 결과
 
-<img src="./output/epic_output.gif" width=250px>
+<div style="display: flex">
+  <img src="./output/normal_output.gif" width=150px>
+  <img src="./output/rare_output.gif" width=150px>
+  <img src="./output/epic_output.gif" width=150px>
+</div>
 
 ## 🔍 살펴 보기
 
