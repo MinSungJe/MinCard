@@ -21,6 +21,15 @@ const NameTitle = styled.p`
   font-weight: bold;
 `;
 
+const EpicMark = styled.p`
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: white;
+  background: #ec2d2d;
+`;
+
 const RareMark = styled.p`
   font-size: 1.2rem;
   text-align: center;
@@ -51,7 +60,13 @@ export default function CardList({ cards }: CardListProps) {
           <CardContainer>
             <NameTitle>{name}</NameTitle>
             <Card key={i} src={imageURL} rarity={rarity} />
-            {rarity === 'rare' ? <RareMark>레어</RareMark> : <NormalMark>노말</NormalMark>}
+            {rarity === 'epic' ? (
+              <EpicMark>에픽</EpicMark>
+            ) : rarity === 'rare' ? (
+              <RareMark>레어</RareMark>
+            ) : (
+              <NormalMark>노말</NormalMark>
+            )}
           </CardContainer>
         );
       })}

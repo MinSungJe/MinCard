@@ -4,5 +4,5 @@ interface Card {
   id: number;
   name: string;
   imageURL: string;
-  rarity: string;
+  rarity: 'epic' | 'rare' | 'normal';
 }

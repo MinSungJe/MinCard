@@ -21,6 +21,117 @@ const CardLightOverlay = styled.div`
   transition: all 0.05s;
 `;
 
+const CardEpicOverlay = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      90deg,
+      transparent 10%,
+      rgba(7, 100, 152, 1) 11%,
+      rgba(72, 121, 169, 1) 12%,
+      rgba(140, 148, 188, 1) 13%,
+      rgba(208, 176, 191, 1) 14%,
+      rgba(249, 217, 209, 1) 15%,
+      transparent 16%
+    ),
+    linear-gradient(
+      90deg,
+      transparent 30%,
+      rgba(7, 100, 152, 1) 31%,
+      rgba(72, 121, 169, 1) 32%,
+      rgba(140, 148, 188, 1) 33%,
+      rgba(208, 176, 191, 1) 34%,
+      rgba(249, 217, 209, 1) 35%,
+      transparent 36%
+    ),
+    linear-gradient(
+      90deg,
+      transparent 50%,
+      rgba(7, 100, 152, 1) 51%,
+      rgba(72, 121, 169, 1) 52%,
+      rgba(140, 148, 188, 1) 53%,
+      rgba(208, 176, 191, 1) 54%,
+      rgba(249, 217, 209, 1) 55%,
+      transparent 56%
+    ),
+    linear-gradient(
+      90deg,
+      transparent 70%,
+      rgba(7, 100, 152, 1) 71%,
+      rgba(72, 121, 169, 1) 72%,
+      rgba(140, 148, 188, 1) 73%,
+      rgba(208, 176, 191, 1) 74%,
+      rgba(249, 217, 209, 1) 75%,
+      transparent 76%
+    ),
+    linear-gradient(
+      90deg,
+      transparent 90%,
+      rgba(7, 100, 152, 1) 91%,
+      rgba(72, 121, 169, 1) 92%,
+      rgba(140, 148, 188, 1) 93%,
+      rgba(208, 176, 191, 1) 94%,
+      rgba(249, 217, 209, 1) 95%,
+      transparent 96%
+    ),
+    linear-gradient(
+      180deg,
+      transparent 10%,
+      rgba(7, 100, 152, 1) 11%,
+      rgba(72, 121, 169, 1) 12%,
+      rgba(140, 148, 188, 1) 13%,
+      rgba(208, 176, 191, 1) 14%,
+      rgba(249, 217, 209, 1) 15%,
+      transparent 16%
+    ),
+    linear-gradient(
+      180deg,
+      transparent 30%,
+      rgba(7, 100, 152, 1) 31%,
+      rgba(72, 121, 169, 1) 32%,
+      rgba(140, 148, 188, 1) 33%,
+      rgba(208, 176, 191, 1) 34%,
+      rgba(249, 217, 209, 1) 35%,
+      transparent 36%
+    ),
+    linear-gradient(
+      180deg,
+      transparent 50%,
+      rgba(7, 100, 152, 1) 51%,
+      rgba(72, 121, 169, 1) 52%,
+      rgba(140, 148, 188, 1) 53%,
+      rgba(208, 176, 191, 1) 54%,
+      rgba(249, 217, 209, 1) 55%,
+      transparent 56%
+    ),
+    linear-gradient(
+      180deg,
+      transparent 70%,
+      rgba(7, 100, 152, 1) 71%,
+      rgba(72, 121, 169, 1) 72%,
+      rgba(140, 148, 188, 1) 73%,
+      rgba(208, 176, 191, 1) 74%,
+      rgba(249, 217, 209, 1) 75%,
+      transparent 76%
+    ),
+    linear-gradient(
+      180deg,
+      transparent 90%,
+      rgba(7, 100, 152, 1) 91%,
+      rgba(72, 121, 169, 1) 92%,
+      rgba(140, 148, 188, 1) 93%,
+      rgba(208, 176, 191, 1) 94%,
+      rgba(249, 217, 209, 1) 95%,
+      transparent 96%
+    );
+  background-size: 200% 150%;
+  background-position: 100%;
+  filter: brightness(1.8) opacity(0);
+  mix-blend-mode: color-dodge;
+  pointer-events: none; /* 마우스 이벤트 차단 */
+`;
+
 const CardRareOverlay = styled.div`
   position: absolute;
   width: 100%;
@@ -62,6 +173,7 @@ const Card = ({ src, rarity }: CardProps) => {
   const [cardStyle, setCardStyle] = useState({});
   const [lightOverlayStyle, setLightOverlayStyle] = useState({});
   const [rareOverlayStyle, setRareOverlayStyle] = useState({});
+  const [epicOverlayStyle, setEpicOverlayStyle] = useState({});
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const x = e.nativeEvent.offsetX;
@@ -71,6 +183,10 @@ const Card = ({ src, rarity }: CardProps) => {
     const posX = x - 125;
     const posY = y - 210;
     const rarePos = 100 - (x / 3 + -y / 5);
+    const epicPosX = 100 - x / 7;
+    const epicPosY = 100 + y / 10;
+    const epicOpacityX = (1 / 15625) * (x - 125) * (x - 125) * 0.45 + 0.05;
+    const epicOpacityY = (1 / 44100) * (y - 210) * (y - 210) * 0.45 + 0.05;
 
     setCardStyle({
       transform: `perspective(300px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
@@ -84,6 +200,11 @@ const Card = ({ src, rarity }: CardProps) => {
     setRareOverlayStyle({
       filter: 'opacity(0.7)',
       backgroundPosition: `${rarePos}%`,
+    });
+
+    setEpicOverlayStyle({
+      filter: `opacity(${epicOpacityX + epicOpacityY})`,
+      backgroundPosition: `${epicPosX}% ${epicPosY}%`,
     });
   };
 
@@ -100,11 +221,17 @@ const Card = ({ src, rarity }: CardProps) => {
       filter: 'opacity(0)',
       backgroundPosition: `100%`,
     });
+
+    setEpicOverlayStyle({
+      filter: 'opacity(0)',
+      backgroundPosition: `100%`,
+    });
   };
 
   return (
     <CardContainer style={cardStyle} onMouseMove={handleMouseMove} onMouseOut={handleMouseOut}>
-      {rarity === 'rare' ? <CardRareOverlay style={rareOverlayStyle} /> : null}
+      {rarity === 'epic' ? <CardEpicOverlay style={epicOverlayStyle} /> : null}
+      {rarity === 'epic' || rarity === 'rare' ? <CardRareOverlay style={rareOverlayStyle} /> : null}
       <CardLightOverlay style={lightOverlayStyle} />
       <CardContent style={{ backgroundImage: `url(${src})` }} />
     </CardContainer>

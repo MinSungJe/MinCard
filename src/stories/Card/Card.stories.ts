@@ -26,3 +26,10 @@ export const Rare: Story = {
     rarity: 'rare',
   },
 };
+
+export const Epic: Story = {
+  args: {
+    src: 'https://upload.wikimedia.org/wikipedia/commons/d/d7/RWS_Tarot_13_Death.jpg',
+    rarity: 'epic',
+  },
+};
